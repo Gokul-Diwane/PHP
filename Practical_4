@@ -1,0 +1,50 @@
+<?php
+	//Simple User defined 
+	/*function add()
+	{
+		$a=5;
+		$b=10;
+		echo "Addition : ".$a+$b;
+	}
+	add();*/
+
+	//Function with arguments
+	/*function add($a,$b)
+	{
+		echo "Addition : ".$a+$b;
+	}
+	add(5,10);*/
+
+	//Function with return value
+	/*function add()
+	{
+		$a=5;
+		$b=10;
+		return $a+$b;
+	}
+	echo "Addition : ".add();*/
+
+	//Function with default arguments
+	/*function add($name,$age=10)
+	{
+		echo $name." is ".$age." years old!<br>";
+	}
+	add("Gokul",18);
+	add("Om");*/
+		
+	//Anonymous Function
+	/*$a;
+	$add=function($a){return $a*$a;};
+	echo "Square : ".$add(5);*/
+
+	//Variable function
+	function add()
+	{
+		$a=5;
+		$b=10;
+		echo "Addition: ".$a+$b;
+	}
+	$add=add();
+	echo $add;
+
+?>
