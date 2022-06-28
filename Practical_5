@@ -1,0 +1,49 @@
+<?php
+	$fname="Gokul";
+	$mname="Sanjay";
+	$lname="Diwane";
+	
+	//strlen
+	echo strlen($fname)."<br>";
+	echo strlen($mname)."<br>";
+	echo strlen($lname)."<br>";
+
+	//strrev
+	echo strrev($fname)."<br>";
+	echo strrev($lname)."<br>";
+
+	//join
+	$friends=array("Gokul","Shubham","Mahesh","Ashwin");
+	echo join(".",$friends);
+
+	//trim
+	$fullname="gokul sanjay diwane";
+	echo "<br>".trim($fullname,"gokuldiwane");
+
+	//ltrim
+	echo "<br>".ltrim($fullname,"gokul");
+
+	//rtrim
+	echo "<br>".rtrim($fullname,"diwane");
+
+	//str_word_count
+	echo "<br>".str_word_count($fullname);
+
+	//strtolower
+	echo "<br>".strtolower($fullname);
+
+	//strtupper
+	echo "<br>".strtoupper($fullname);
+
+	//ucfirst
+	echo "<br>".ucfirst($fullname);
+
+	//ucwords
+	echo "<br>".ucwords($fullname);
+
+	//substr
+	echo "<br>".substr($fullname,5);
+
+	//str_replace
+	echo "<br>".str_replace("gokul","pratik",$fullname);
+?>
