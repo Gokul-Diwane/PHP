@@ -1,0 +1,51 @@
+<html>
+<head>
+<title>
+	Creating the registration form
+</title>
+<h3> REGISTRATION FORM </h3>
+</head>
+<style>
+	.combo
+	{
+		padding:5px
+	}
+</style>
+<body>
+<form action ="welcome.php" method="post">
+	<label>Firstname</label><br>
+	<input type="text" name="firstname"/><br><br>
+	<label>Middlename</label><br>
+	<input type="text" name="middlename"/><br><br>
+	<label>Lastname</label><br>
+	<input type="text" name="lastname"/><br><br>
+	
+	<input type="hidden" id="roll_no" name="roll_no" value="2007014"/><br><br>
+	
+	<strong>FAV PROGRAMMING LANGUAGE</strong><br>
+	<select class="combo"><br><br>
+	<option value="html">HTML</option>
+	<option value="c">C</option>
+	<option value="css">CSS</option>
+	<option value="java">JAVA</option>
+	<option value="php">PHP</option><br><br>
+	</select><br><br>
+	
+	<strong>FAV CRICKETER</strong><br>
+	<select name="criketers" size="5"><br><br>
+	<option value="vk">VIRAT KOHLI</option>
+	<option value="rs">ROHIT SHARMA</option>
+	<option value="msd">MAHENDRASINGH DHONI</option>
+	<option value="kl">LOKESH RAHUL</option>
+	<option value="sd">SHIKHAR DHAWAN</option>
+	<option value="jb">JASPRIT BUMRAH</option>
+	<option value="yc">YUZVENDRA CHAHAL</option>
+	<option value="dk">DINESH KARTIK</option>
+	</select><br><br>
+	
+	<input type="submit" value="Submit"><br><br>
+	<input type="reset" value="Reset">
+</form>
+</body>
+</html>
+	
