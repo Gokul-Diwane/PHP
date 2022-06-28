@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>
+	Creating the registration form
+</title>
+<h3> REGISTRATION FORM </h3>
+</head>
+<body>
+<form action="None.php" method="post">
+	<label>Firstname</label><br>
+	<input type="text" name="firstname"/><br><br>
+	<label>Middlename</label><br>
+	<input type="text" name="middlename"/><br><br>
+	<label>Lastname</label><br>
+	<input type="text" name="lastname"/><br><br>
+	
+	<label>Gender</label><br>
+	<input type="radio" name="gender"/>MALE<br>
+	<input type="radio" name="gender"/>FEMALE<br>
+	<input type="radio" name="gender"/>OTHER<br><br>
+	
+	<label>Hobbies<label><br>
+	<input type="checkbox" name="Coding">Coding<br>
+	<input type="checkbox" name="Cricket">Cricket<br>
+	<input type="checkbox" name="Football">Football<br>
+	<input type="checkbox" name="Singing">Singing<br>
+	<input type="checkbox" name="Dancing">Dancing<br>
+	<input type="checkbox" name="Other">Other<br><br>
+	
+	<input type="submit" value="Submit"><br><br>
+	<input type="reset" value="Reset">
+</form>
+</body>
+</html>
+
+
+//None File
+<?php
+	echo "Form Submitted successfully!!!";
+?>
