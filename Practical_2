@@ -1,0 +1,52 @@
+<?php
+	//Assignment Operators
+	/*$a=5;
+	$b=10;
+	echo "Addition: ",$a+$b;
+	echo "<br>Subtraction: ",$b-$a;
+	echo "<br>Multiplication: ",$a*$b;
+	echo "<br>Division: ",$b/$a;
+	echo "<br>Modulus: ",$b%$a;*/
+
+	//Logical Operators
+	/*$age=20;
+	if($age > 18 && $age < 50)
+	{
+		echo "You can Drive!";
+	}*/
+
+	//Assignment Operators
+	/*$a=5;
+	$b=10;
+	$a+=50;
+	$b-=3;
+	echo $a."<br>";
+	echo $b;*/
+
+	//Comparision Operators
+	/*$age=20;
+	if($age == 18)
+	{
+		echo "You can Drive!";
+	}
+	else
+	{
+		echo"You can't!";
+	}*/
+
+	//Increment-Decrement Operator
+	/*$a=20;
+	echo $a++."<br>";
+	$a=20;
+	echo --$a;*/
+
+	//String Operator
+	/*$fname="Gokul";
+	$lname="Diwane";
+	echo "Your full name is ".$fname." ".$lname.".";*/
+
+	// Conditional Assignment operator
+	$age=16;
+	$result=($age>18)? "You can Drive!":"You can't!";
+	echo $result;
+?>
