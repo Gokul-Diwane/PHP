@@ -1,0 +1,34 @@
+<?php
+	class student
+	{
+		public $name;
+		public $roll;
+		public function __construct($name,$roll)
+		{
+			$this->name=$name;
+			$this->roll=$roll;
+		}
+		public function display()
+		{
+			echo "The name of the student is {$this->name} and roll no is {$this->roll}.<br>";
+		}
+	}
+	class svm extends student
+	{	
+		public $color;
+		public $car;
+		public function __construct($color,$car)
+		{
+			$this->color=$color;
+			$this->car=$car;
+		}	
+		function display()
+		{
+			echo "The color of the student is {$this->color} and his car is {$this->car}.";
+		}
+	}
+	$Gokul=new student("Gokul Diwane",2007014);
+	$Gokul->display();
+	$Om=new svm("Orange","BMW");
+	$Om->display();
+?>
