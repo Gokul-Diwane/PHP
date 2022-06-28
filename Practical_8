@@ -1,0 +1,19 @@
+<?php
+	$img=imagecreate(1000,1000);
+	$clr=imagecolorallocate($img,255,0,0);
+	$txt=imagecolorallocate($img,0,0,0);
+	$fill=imagecolorallocate($img,255,255,255);
+	$fil=imagecolorallocate($img,0,128,0);
+	imagesetthickness($img,5);
+	imagestring($img,5,200,200,"Hello Gokul!!!",$txt);
+	imagestringup($img,5,500,500,"Hello GPP!!!",$txt);
+	imageline($img,200,400,600,800,$txt);
+	imagerectangle($img,800,600,400,200,$txt);
+	imagefilledrectangle($img,400,200,100,500,$fill);
+	imageellipse($img,100,100,100,100,$txt);
+	imagefilledellipse($img,200,200,200,200,$fill);
+	imagefill($img,0,0,$fil);
+	header("Content-Type:image/jpeg");
+	imagejpeg($img);
+	imagedestroy($img);
+?>
