@@ -1,0 +1,24 @@
+<?php
+	class Name
+	{
+		public $fname;
+		public $lname;
+		function setname($fname,$lname)
+		{
+			$this->fname=$fname;
+			$this->lname=$lname;
+		}
+		function getname()
+		{
+			echo $this->fname;
+			echo $this->lname;
+		}
+	}
+	$Gokul=new Name();
+	$Shubham=new Name();
+	$Gokul->setname("Gokul"," Diwane");	
+	$Shubham->setname("Shubham"," Manaskar");
+	$Gokul->getname();
+	echo "<br>";
+	$Shubham->getname();
+?>
