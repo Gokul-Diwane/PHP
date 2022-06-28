@@ -1,0 +1,7 @@
+<?php
+	$student=array("Gokul","Shubham","Ashwin","Mahesh");
+	$a=serialize($student);
+	echo $a."<br>";
+	$b=unserialize($a);
+	print_r ($b);
+?>
