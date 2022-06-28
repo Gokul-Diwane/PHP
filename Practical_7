@@ -1,0 +1,53 @@
+<?php
+	$bros=array("Gokul","Pratik","Harish","Manoj","Bhushan");
+	//count method
+	echo count($bros);
+	echo "<br>";
+	//push method
+	array_push($bros,"Rushi");
+	print_r($bros);
+	echo "<br>";
+	//pop method
+	array_pop($bros);
+	print_r ($bros);
+	echo "<br>";
+	//shift method
+	array_shift ($bros);
+	print_r ($bros);
+	echo "<br>";
+	//unshift method
+	array_unshift($bros,"Gokul","Hrutik");
+	print_r ($bros);
+	echo "<br>";
+	//search
+	$search=array_search("Pratik",$bros);
+	echo $search;
+	echo "<br>";
+	//flip
+	$schools=array("Gokul"=>"SVM","Pratik"=>"Babanrao","Gaurav"=>"KBJ");
+	$flip=array_flip($schools);
+	print_r ($flip);
+	echo "<br>";
+	//intersect
+	$bro=array("Gokul","Pratik","Manoj","Harish","Bhushan");
+	$frnd=array("Pavan","Mangesh","Surya","Gaurav","Bhushan");
+	$intersect=array_intersect($bro,$frnd);
+	print_r ($intersect);
+	echo "<br>";
+	//array_count_values
+	$values=array_count_values($bro);
+	print_r ($values);
+	echo "<br>";
+	//sum
+	$nums=array(1,2,3,4,5);
+	$sum=array_sum($nums);
+	echo $sum;
+	echo "<br>";
+	//diff
+	$diff=array_diff($bro,$frnd);
+	print_r($diff);
+	echo "<br>";
+	//reverse
+	print_r(array_reverse($bro));
+	echo "<br>";
+?>
