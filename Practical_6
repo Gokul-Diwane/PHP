@@ -1,0 +1,64 @@
+<?php
+	//Indexed array
+	//First Method
+	$names=array("Pratik","Gokul","Manoj","Shubham");
+	foreach($names as $elements)
+	{
+		echo "Name=".$elements."<br>";
+	}
+	//Second Method
+	$name[0]="Pratik";
+	$name[1]="Gokul";
+	$name[2]="Manoj";
+	$name[3]="Shubham";
+	foreach($name as $item)
+	{
+		echo "Name: ".$item."<br>";
+	}
+	
+	//Associative array
+	//First Method
+	$friends=array("Gokul"=>100000,"Pratik"=>80000,"Manoj"=>50000,"Shubham"=>70000);
+	echo "Salary of Gokul is: ".$friends['Gokul']."<br>";
+	echo "Salary of Pratik is: ".$friends['Pratik']."<br>";
+	echo "Salary of Manoj is: ".$friends['Manoj']."<br>";
+	echo "Salary of Shubham is: ".$friends['Shubham']."<br>";
+	//Second Method
+	$friend['Gokul']=100000;
+	$friend['Pratik']=80000;
+	$friend['Manoj']=50000;
+	$friend['Shubham']=70000;
+	echo "Salary of Gokul is: ".$friend['Gokul']."<br>";
+	echo "Salary of Pratik is: ".$friend['Pratik']."<br>";
+	echo "Salary of Manoj is: ".$friend['Manoj']."<br>";
+	echo "Salary of Shubham is: ".$friend['Shubham']."<br>";
+	
+	//Multidimensional array
+	$marks=array(
+		"Gokul"=>array(
+			"PHP"=>93,
+			"DS"=>97,
+			"DCN"=>98
+			),
+		"Pratik"=>array(
+			"PHP"=>89,
+			"DS"=>88,
+			"DCN"=>94
+			),
+		"Manoj"=>array(
+			"PHP"=>88,
+			"DS"=>87,
+			"DCN"=>78
+			),
+		"Shubham"=>array(
+			"PHP"=>93,
+			"DS"=>87,
+			"DCN"=>88
+			)
+		);
+	echo "Gokul got ".$marks['Gokul']['DS']." marks in DS.<br>";
+	echo "Pratik got ".$marks['Pratik']['DCN']." marks in DCN.<br>";
+	echo "Shubham got ".$marks['Shubham']['PHP']." marks in PHP.<br>";
+	echo "Manoj got ".$marks['Manoj']['DS']." marks in DS.<br>";
+	
+?>
