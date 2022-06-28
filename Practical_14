@@ -1,0 +1,61 @@
+<?php
+	class rectangle
+	{
+		public $length;
+		public $breadth;
+		public function area($length,$breadth)
+		{
+			$this->length=$length;
+			$this->breadth=$breadth;
+		}
+		public function display()
+		{
+			return $this->length * $this->breadth;
+		}
+	}
+	class square
+	{
+		public $side;
+		public function area($side)
+		{
+			$this->side=$side;
+		}
+		public function display()
+		{
+			return $this->side * $this->side;
+		}
+	}
+	$rect=new rectangle;
+	$sq=new square;
+	/*$rect->area(4,6);
+	$sq->area(3);
+	echo $sq->display();
+	echo "<br>";
+	echo $rect->display();*/
+	
+	//Introspection
+	$a=get_declared_classes();
+	$b=get_object_vars($rect);
+	$c=get_class_vars("square");
+	$d=class_exists("rectangle");
+	$e=get_class_methods("rectangle");
+	$f=is_object($sq);
+	$g=get_class($rect);
+	$h=method_exists("rectangle","area");
+	print_r ($a);
+	echo "<br>";
+	print_r ($b);
+	echo "<br>";
+	print_r ($c);
+	echo "<br>";
+	echo var_dump ($d);
+	echo "<br>";
+	print_r ($e);
+	echo "<br>";
+	echo var_dump ($f);
+	echo "<br>";
+	print_r ($g);
+	echo "<br>";
+	echo var_dump ($h);
+	
+?>
