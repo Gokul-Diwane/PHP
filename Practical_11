@@ -1,0 +1,13 @@
+<?php
+	require('fpdf/fpdf.php');
+	$pdf=new FPDF();
+	$pdf->AddPage();
+	$pdf->SetFont('Arial','IBU',30);
+	$pdf->SetTextColor(255,0,0);
+	$pdf->SetFillColor(0,128,0);
+	$pdf->Cell(1,1,'Govt. Poly,Pune');
+	$pdf->AddPage();
+	$pdf->SetTextColor(0,255,0);
+	$pdf->Cell(10,1,'Govt. Poly,Kolhapur');
+	$pdf->Output();
+?>
