@@ -48,4 +48,14 @@
 </form>
 </body>
 </html>
+
+//Welcome File
+<?php
+	$fname=$_POST['firstname'];
+	$lname=$_POST['lastname'];
+	$roll=$_POST['roll_no'];
 	
+	echo "NAME=".$fname." ".$lname;
+	echo "<br>";
+	echo "ROLL NO=".$roll;	
+?>
