@@ -1,0 +1,22 @@
+<html>
+	<body bgcolor="#000000">
+		<tt>
+			<?php
+				$img=imagecreatefromjpeg("C:\Users\gokul\Downloads\Virat.jpg");
+				$dx=imagesx($img);
+				$dy=imagesy($img);
+				for($y=0;$y<$dy;$y++)
+				{
+					for($x=0;$x<$dx;$x++)
+					{
+						$colorindex=imagecolorat($img,$x,$y);
+						$rgb=imagecolorsforindex($img,$colorindex);
+						printf('<font color=%02x%02x%02x>#</font>',
+						$rgb['red'],$rgb['green'],$rgb['blue']);
+					}
+					echo "<br>";
+				}
+			?>
+		</tt>
+	</body>
+</html>
